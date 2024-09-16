@@ -19,6 +19,8 @@ const filteredSum = a.filter(element => checkElement(element))
     .reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 console.log(filteredSum)
 
+const answerElement = document.getElementById("resultValue").innerText = filteredSum
+
 function checkElement(num) {
     const formattedNum = Math.abs(num)
     console.log(formattedNum)
